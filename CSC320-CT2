@@ -1,0 +1,43 @@
+import java.util.Scanner;
+ 
+public class MPG {
+ 
+	public static void main(String[] args) {
+ 
+		Scanner scnr = new Scanner(System.in);
+		//Declare values
+		
+      String carBrand;
+		  String carModel;
+	    int year;
+	    int startOdometerReading;
+	   	int endOdometerReading;
+	   	double gallonUsed;
+	   	double odometerFinal;
+	   	double milesPerGallon;
+	 
+	       System.out.println("Enter your car brand");
+	       carBrand = scnr.next();
+	      
+	       System.out.println("Enter the model of your car");
+	       carModel = scnr.next();
+	 
+	       System.out.println("Enter the year of your car");
+	       year = scnr.nextInt();
+	 
+	       System.out.print("Enter the start odometer reading");
+	       startOdometerReading = scnr.nextInt();
+	 
+	       System.out.println("What is the ending reading of odometer reading?");
+	       endOdometerReading = scnr.nextInt();
+	      
+	       System.out.println("How many gallon did you used?");
+	       gallonUsed = scnr.nextDouble();
+	      
+	       milesPerGallon = ((endOdometerReading - startOdometerReading)/gallonUsed);
+	       
+	       System.out.println("Miles per gallon is " + milesPerGallon + " "+"MPG");
+	 
+	   }
+	}
+ 
